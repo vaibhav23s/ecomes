@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fefcf9;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  #nav-bar {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  
+  
+  #nav-bar-id-one h1 {
+    font-size: 70px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6a00, #ee0979, #8e2de2, #1e90ff);
+    background-clip: text;
+    color: transparent;
+    
+  }
+  
+  
+  
+  #nav-bar-id-two ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    font-size: 20px;
+    font-family:  Arial, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: 20px;
+  }
+
+  #nav-bar-id-two li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 10px 10px 0px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  
+  #nav-bar-id-two li:hover {
+    color: red;
+    background-color: rgb(218, 218, 209);
+    
+    
+  }
+  
+  
+  
+  #nav-bar-id-three {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background:linear-gradient(90deg, #ff6a00, #ee0979, #8e2de2, #1e90ff);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #cc5c00;
+  }
+  
+ #nav-bar-id-three>img{
+    position: fixed;
+    width: 150px;
+    margin-top: -79px;
+    margin-left: -150px;
+    
+    
+ }
+#coin{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  margin-left: 620px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#slidebox{
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 250px;
+  position: fixed;
+  margin-top: 290px;
+  margin-left: 480px;
+  background-color: antiquewhite;
+  display: none;
+}
+#slidebox ul{
+  list-style: none;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px; 
+  margin: 0%;
+  padding: 0%;
+  margin-top: 20px;
+  
+
+}
+#slidebox li:hover{
+  background:linear-gradient(90deg, #ff6a00, #ee0979, #8e2de2, #1e90ff);
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+
+}
+ 
+ 
