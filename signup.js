@@ -1,23 +1,27 @@
-let form = document.getElementById("form");
-let pass = document.getElementById("pass");
-let names = document.getElementById("names");
-let email = document.getElementById("email");
 
+  let signupForm = document.getElementById("signup-form");
 
-form.addEventListener("submit", signfun);
-let signarr = JSON.parse(localStorage.getItem("signarr")) || [];
+  signupForm.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-function signfun(event) { 
-  event.preventDefault(); 
+    let username = document.getElementById("username").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-  let obj = {
-    pass: pass.value,
-    email: email.value,
-    names: names.value,
-  };
+    let users = JSON.parse(localStorage.getItem("loginData")) || [];
 
-  signarr.push(obj); 
-  console.log(signarr);
-  localStorage.setItem("signarr",JSON.stringify(signarr))
-  window.location.href = "./login.html";
-}
+    let userObj = {
+      username: username,
+      email: email,
+      password: password
+    };
+
+    users.push(userObj);
+
+    localStorage.setItem("loginData", JSON.stringify(users));
+
+    alert("Signup successful!");
+
+    // Login page pe bhejna
+    window.location.href = "login.html";
+  });
